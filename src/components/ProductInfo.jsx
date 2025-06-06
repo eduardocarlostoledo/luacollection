@@ -10,6 +10,12 @@ export function ProductInfo({ name, price, description, rating, colors, sizes })
   const formattedPrice =
     typeof price === "number" ? `Gs. ${price.toLocaleString("es-PY")}` : "Consultar";
 
+  const handleWhatsAppClick = () => {
+    const mensaje = `Hola! Estoy interesada en la prenda "${name}"\n- Talle: ${selectedSize}\n- Color: ${selectedColor}\n- Cantidad: ${quantity}\n\nLa encontré en: ${window.location.href}`;
+    const url = `https://wa.me/595986123456?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, "_blank");
+  };
+
   return (
     <div className="flex flex-col gap-6">
       <div>
@@ -92,10 +98,11 @@ export function ProductInfo({ name, price, description, rating, colors, sizes })
 
       <Button
         size="lg"
-        color="primary"
-        startContent={<Icon icon="lucide:shopping-cart" />}
+        color="success"
+        onClick={handleWhatsAppClick}
+        startContent={<Icon icon="ic:baseline-whatsapp" />}
       >
-        Agregar al carrito
+        Consultar por WhatsApp
       </Button>
     </div>
   );
