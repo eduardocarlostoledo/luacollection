@@ -1,8 +1,16 @@
-import React, { useState } from "react";
+
 import { Button, Chip } from "@heroui/react";
 import { Icon } from "@iconify/react";
+import React, { useState, useEffect } from "react";
 
 export function ProductInfo({ name, price, description, rating, colors, sizes }) {
+
+  useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
+
+
+
   const [selectedColor, setSelectedColor] = useState(colors?.[0]);
   const [selectedSize, setSelectedSize] = useState(sizes?.[0]);
   const [quantity, setQuantity] = useState(1);

@@ -15,6 +15,13 @@ export const Hero = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">Lua Collection Circuito</h1>
+            <div className="hero-image-container">
+            <img
+              alt="Lúa Collection Moda Femenina"
+              className="hero-image"
+              src={prod22}
+            />
+          </div>
             <p className="hero-description">
               Descubre nuestra exclusiva colección de moda femenina casual con diseños únicos de estilo western y animal print a precios mayoristas.
             </p>
@@ -35,13 +42,7 @@ export const Hero = () => {
               <span className="truck-icon">🚚</span>
             </div>
           </div>
-          <div className="hero-image-container">
-            <img
-              alt="Lúa Collection Moda Femenina"
-              className="hero-image"
-              src={prod22}
-            />
-          </div>
+          
         </div>
       </div>
     </section>
