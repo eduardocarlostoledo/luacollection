@@ -17,7 +17,7 @@ export const products = [
   {
     id: "1",
     name: "Set Animal Print Taz",
-    price: 160000,
+    price: null,
     description: "Blusa con lazo + pantalón jogger animal print. Incluye remera oversize estampada de Taz.",
     images: [ropamodelos],
     colors: ["#D2B48C", "#000000"],
@@ -178,7 +178,7 @@ reviews: [
   {
     id: "5",
     name: "Sweater Cow Print",
-    price: 129900,
+    price: null,
     description: "Sweaters oversize estampados con patrón de vaca. Tacto suave, corte moderno.",
     images: [foto1],
     colors: ["#000000", "#FFFFFF"],
@@ -497,7 +497,7 @@ export const relatedProducts = [
   {
     id: "related-1",
     name: "Classic Running Shoes",
-    price: 99.99,
+    price: null,
     images: ["https://img.heroui.chat/image/shoes?w=800&h=800&u=5"],
     description: "Lightweight running shoes with excellent support.",
     colors: ["#000000", "#FFFFFF"],
@@ -532,7 +532,7 @@ reviews: [
   {
     id: "related-2",
     name: "Sport Hiking Boots",
-    price: 109.99,
+    price: null,
     images: ["https://img.heroui.chat/image/shoes?w=800&h=800&u=6"],
     description: "Durable hiking boots for all terrains.",
     colors: ["#654321", "#006400"],
@@ -567,7 +567,7 @@ reviews: [
   {
     id: "related-3",
     name: "Casual Canvas Shoes",
-    price: 79.99,
+    price: null,
     images: ["https://img.heroui.chat/image/shoes?w=800&h=800&u=7"],
     description: "Comfortable everyday canvas shoes.",
     colors: ["#000000", "#0000FF"],
@@ -602,7 +602,7 @@ reviews: [
   {
     id: "related-4",
     name: "Leather Dress Shoes",
-    price: 149.99,
+    price: null,
     images: ["https://img.heroui.chat/image/shoes?w=800&h=800&u=8"],
     description: "Elegant leather shoes for formal occasions.",
     colors: ["#000000", "#654321"],
@@ -636,8 +636,6 @@ reviews: [
   }
 ];
 
-
-// export const products = [
 //   {
 //     id: 1,
 //     name: "Set Animal Print Taz",
