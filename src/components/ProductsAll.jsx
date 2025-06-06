@@ -6,7 +6,7 @@ import { products } from "../data/products"; // Importación correcta
 
 export const ProductsAll = () => (
   <div className="products-all-container">
-    <h1>Todos los Productos</h1>
+    <h1 className="primary-button-catalogo" > Catálogo </h1>
     <div className="products-grid">
       {products.map((p) => (
         <div className="product-card" key={p.id}>
@@ -20,8 +20,10 @@ export const ProductsAll = () => (
           <p className="product-price">
             {typeof p.price === "number" ? `Gs. ${p.price.toLocaleString("es-PY")}` : "Consultar"}
           </p>
-          <Link to={`/productos/${p.id}`} className="product-link">
-            Ver detalle →
+
+          
+          <Link to={`/productos/${p.id}`} className="primary-button-catalogo">
+            Ver detalle
           </Link>
         </div>
       ))}

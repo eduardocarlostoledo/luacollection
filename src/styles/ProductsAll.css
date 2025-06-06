@@ -24,3 +24,22 @@
   color: #8b3a9e;
   text-decoration: none;
 }
+
+.primary-button-catalogo {
+  
+  background-color: #d11f5a;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  display: flex;
+  flex: inherit;
+  flex-direction: column;
+  margin-bottom: 20px;
+} 

@@ -8,6 +8,7 @@ import { ProductInfo } from "./ProductInfo";
 import { ProductSpecs } from "./ProductSpecs";
 import { ProductReviews } from "./ProductReviews";
 import { RelatedProducts } from "./RelatedProducts";
+import { Icon } from "@iconify/react";
 
 export const ProductDetail = () => {
   const { id } = useParams();
@@ -17,7 +18,7 @@ export const ProductDetail = () => {
     return (
       <div className="container mx-auto px-4 py-8">
         <p className="text-red-600">Producto no encontrado.</p>
-        <Link to="/productos" className="text-primary underline">
+        <Link to="/productos" className="primary-button-catalogo">
           ← Volver a productos
         </Link>
       </div>
@@ -29,9 +30,13 @@ export const ProductDetail = () => {
   return (
   <div key={id} className="container mx-auto px-4 py-8">
 
-      <Link to="/productos" className="text-sm text-primary underline block mb-4">
-        ← Volver a productos
-      </Link>
+<Link
+  to="/productos"
+  className="primary-button-catalogo"
+>
+  
+  Volver a productos
+</Link>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
         <ImageGallery images={product.images} />
