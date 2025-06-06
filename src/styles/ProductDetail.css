@@ -1,0 +1,25 @@
+.product-detail-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 2rem auto;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+.product-detail-container img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.product-info {
+  text-align: left;
+}
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4b004b;
+}
+.back-link {
+  margin-top: 1rem;
+  display: inline-block;
+  color: #8b3a9e;
+}
